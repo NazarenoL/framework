@@ -670,7 +670,7 @@ class FormBuilder {
 	{
 		if ($this->missingOldAndModel($name)) return $checked;
 
-		return $this->getValueAttribute($name) == $value;
+		return $this->getValueAttribute($name) === $value;
 	}
 
 	/**
